@@ -1,0 +1,109 @@
+:root {
+  --font-text: "Roboto", sans-serif;
+  --color-primary:#1f1f1f;
+  --color-secondary: #646464;
+}
+
+html {
+  font-family: var(--font-text);
+  color: var(--color-primary);
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inherit;
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+li .day-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+li .day-temperature {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.global-box {
+  margin: auto;
+  max-width: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.top {
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid 3px var(--color-secondary);
+}
+
+.bottom {
+  border: solid 3px var(--color-secondary);
+  display: inherit;
+  flex-direction: column;
+}
+
+.left-info {
+  display: inherit;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.current-icon {
+  width: 60px;
+}
+
+.left-info img {
+  width: 60px;
+}
+
+.current-temperature {
+  margin: 0;
+  font-size: 3.7rem;
+  font-weight: 600;
+}
+
+.right-info {
+  margin-right: 1rem;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.current-position {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.right-info *:not(:first-child) {
+  color: var(--color-secondary);
+}
+
+
+
+
+
